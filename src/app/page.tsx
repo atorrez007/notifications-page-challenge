@@ -1,4 +1,4 @@
-import Notifications from "../Components/Notifications";
+import Notifications from "@/Components/Notifications";
 
 export default function Home() {
   return (
