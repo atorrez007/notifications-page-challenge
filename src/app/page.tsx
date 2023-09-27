@@ -1,8 +1,8 @@
-import Notifications from "@/Components/Notifications";
+import Notifications from "@/components/Notifications";
 
 export default function Home() {
   return (
-    <div>
+    <div className="notification-container">
       <Notifications />
     </div>
   );
