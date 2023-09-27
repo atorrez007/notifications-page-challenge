@@ -1,10 +1,9 @@
-import TestComponent from "@/Components/TestComponent";
+import Notifications from "@/Components/Notifications";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Notifications Challenge</h1>
-      <TestComponent />
+    <div className="notification-container">
+      <Notifications />
     </div>
   );
 }

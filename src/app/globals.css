@@ -1,6 +1,9 @@
-body h1 {
+body {
   margin: 0%;
-  height: 100%;
+  background-color: rgb(249 250 254);
+}
+.notification-container {
   display: flex;
   justify-content: center;
+  height: auto;
 }
