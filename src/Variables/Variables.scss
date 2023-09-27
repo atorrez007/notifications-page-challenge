@@ -1,0 +1,31 @@
+// FONTS
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: local("PlusJakartaSans-Medium")
+    url("../assets/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBold";
+  src: local("PlusJakartaSans-ExtraBold")
+    url("../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}
+
+$fontMedium: "PlusJakartaSans-Medium";
+
+$fontExtraBold: "PlusJakartaSans-ExtraBold";
+
+// COLORS
+// Grayspace is for the activity panel background-color
+$grayspace: rgb(249 250 254);
+$graytext: rgb(119 124 128);
+$white: rgb(255 255 255);
+$darkblue: rgb(9 51 121);
+$darktext: rgb(25 25 33);
+
+// Functions
+
+// Automatically highlight the border of the element
+@mixin borderCheck {
+  border: 1px red solid;
+}

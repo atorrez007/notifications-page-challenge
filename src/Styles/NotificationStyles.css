@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: local("PlusJakartaSans-Medium") url("../assets/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBold";
+  src: local("PlusJakartaSans-ExtraBold") url("../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}
+.notifications-panel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-top: 3em;
+  height: 100%;
+  width: 44em;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(226, 221, 221, 0.2) 0px 0px 16px 0px;
+}/*# sourceMappingURL=NotificationStyles.css.map */

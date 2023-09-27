@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: local("PlusJakartaSans-Medium") url("../assets/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBold";
+  src: local("PlusJakartaSans-ExtraBold") url("../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}/*# sourceMappingURL=Variables.css.map */
