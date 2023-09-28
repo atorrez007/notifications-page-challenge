@@ -1,4 +1,5 @@
 @import "../Variables/Variables.scss";
+@import "../Breakpoints/Breakpoints.scss";
 
 // .font-test {
 //   border: 1px red solid;
@@ -9,22 +10,52 @@
 //     color: gray;
 //   }
 // }
-
 // .variable-font-test h2 {
 //   font-family: $fontExtraBold, sans-serif;
 //   font-weight: 300;
 // }
 
+// .notifications-panel {
+//   // @include borderCheck();
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   flex-direction: column-reverse;
+//   margin-top: 3em;
+//   height: 100%;
+//   width: 44em;
+//   border-radius: 10px;
+//   background-color: $white;
+//   box-shadow: rgba(226, 221, 221, 0.2) 0px 0px 16px 0px;
+// }
+
+// When introducing small and medium with min-width, you need to include values in both or the only introduced value will be the defacto for all sizes. Keep in mind.
 .notifications-panel {
-  // @include borderCheck;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column-reverse;
-  margin-top: 3em;
-  height: 100%;
-  width: 44em;
-  border-radius: 10px;
-  background-color: $white;
-  box-shadow: rgba(226, 221, 221, 0.2) 0px 0px 16px 0px;
+  @include sm {
+    width: 33em;
+    margin: 0%;
+    // border: 1px red solid;
+    border-radius: 0%;
+    display: flex;
+    padding: 0 1em 0 1em 0;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: $white;
+    box-shadow: rgba(226, 221, 221, 0.2) 0px 0px 16px 0px;
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @include lg {
+    // @include borderCheck();
+    margin-top: 3em;
+    height: 100%;
+    width: 44em;
+    border-radius: 10px;
+    p {
+      font-size: 16px;
+    }
+  }
 }

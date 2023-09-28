@@ -5,10 +5,10 @@ const Notifications = () => {
   return (
     <div className="notifications-panel">
       <div>
-        <h2>Notification 1</h2>
+        <p>Notification 1</p>
       </div>
       <div>
-        <h2>Notification 2</h2>
+        <p>Notification 2</p>
       </div>
     </div>
   );
