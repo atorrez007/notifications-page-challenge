@@ -34,7 +34,6 @@
   @include sm {
     width: 33em;
     margin: 0%;
-    // border: 1px red solid;
     border-radius: 0%;
     display: flex;
     padding: 0 1em 0 1em 0;
@@ -54,6 +53,7 @@
     height: 100%;
     width: 44em;
     border-radius: 10px;
+    background-color: $white;
     p {
       font-size: 16px;
     }
