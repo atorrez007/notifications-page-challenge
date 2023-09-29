@@ -12,12 +12,12 @@ const GroupCard = () => {
         </div>
       </div>
       <div className="user-info">
-        <p>
+        <div>
           <span className="username">Anna Kim</span> Left the group Chess Club
           <div className="time-stamp-placeholder">
             <span className="timestamp">2 Weeks Ago</span>
           </div>
-        </p>
+        </div>
       </div>
     </div>
   );
