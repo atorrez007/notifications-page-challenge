@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  src: local("PlusJakartaSans-Medium") url("../assets/fonts/static/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+  font-family: "PlusJakartaSans-ExtraBold";
+  src: local("PlusJakartaSans-ExtraBold") url("../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+}
+@media (min-width: 300px) {
+  .group-card-panel-unread {
+    display: flex;
+    min-width: 5.5em;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgb(249, 250, 254);
+    align-items: center;
+  }
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-right: 0.2em; /* Add spacing between avatar and user info */
+}
+
+.user-info {
+  display: flex;
+  padding-top: 1em;
+  flex-wrap: wrap;
+}
+.user-info p {
+  color: rgb(119, 124, 128);
+}
+
+.username {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: "PlusJakartaSans-ExtraBold", sans-serif;
+  font-weight: 800;
+  color: rgb(25, 25, 33);
+  margin-right: 0.4em;
+}
+
+.time-stamp-placeholder {
+  padding-top: 0.5em;
+}
+
+.timestamp {
+  margin-top: 0%;
+}
+
+.group-card-name {
+  height: auto;
+  font-family: "PlusJakartaSans-ExtraBold", sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=GroupCardStyles.css.map */

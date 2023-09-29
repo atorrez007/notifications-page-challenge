@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import "../Styles/NotificationStyles.css";
-
+import GroupCard from "./GroupCard";
 const Notifications = () => {
   return (
     <div className="notifications-panel">
@@ -15,6 +16,8 @@ const Notifications = () => {
           <p>Mark all as read</p>
         </div>
       </div>
+      <GroupCard />
+      <GroupCard />
     </div>
   );
 };
