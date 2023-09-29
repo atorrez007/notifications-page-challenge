@@ -4,9 +4,8 @@
 .group-card-panel-unread {
   @include sm {
     display: flex;
-    min-width: 5.5em;
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 1em;
     padding-left: 1em;
@@ -15,9 +14,52 @@
     padding-bottom: 0.5em;
     background-color: $unreadGray;
     align-items: center;
-    // p {
-    //   color: $graytext;
-    // }
+  }
+
+  @include lg {
+    display: flex;
+    min-width: 5.5em;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: $unreadGray;
+    align-items: center;
+  }
+}
+
+.group-card-panel-read {
+  @include sm {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: $white;
+    align-items: center;
+  }
+
+  @include lg {
+    display: flex;
+    min-width: 5.5em;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: $white;
+    align-items: center;
   }
 }
 
@@ -26,7 +68,7 @@
   width: 60px;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  margin-right: 0.2em; /* Add spacing between avatar and user info */
+  margin-right: 0.2em;
 }
 
 .user-info {
@@ -46,11 +88,11 @@
   font-weight: 800;
   color: $darktext;
   margin-right: 0.4em;
-  // margin-bottom: 0.8em;
 }
 
 .time-stamp-placeholder {
   padding-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .timestamp {

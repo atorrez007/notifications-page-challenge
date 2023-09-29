@@ -9,9 +9,24 @@
 @media (min-width: 300px) {
   .group-card-panel-unread {
     display: flex;
-    min-width: 5.5em;
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgb(249, 250, 254);
+    align-items: center;
+  }
+}
+@media (min-width: 960px) {
+  .group-card-panel-unread {
+    display: flex;
+    min-width: 5.5em;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 1em;
     padding-left: 1em;
@@ -23,12 +38,44 @@
   }
 }
 
+@media (min-width: 300px) {
+  .group-card-panel-read {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+  }
+}
+@media (min-width: 960px) {
+  .group-card-panel-read {
+    display: flex;
+    min-width: 5.5em;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+  }
+}
+
 .avatar {
   height: 60px;
   width: 60px;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  margin-right: 0.2em; /* Add spacing between avatar and user info */
+  margin-right: 0.2em;
 }
 
 .user-info {
@@ -51,6 +98,7 @@
 
 .time-stamp-placeholder {
   padding-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .timestamp {

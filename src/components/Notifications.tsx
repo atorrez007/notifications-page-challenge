@@ -1,8 +1,13 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/NotificationStyles.css";
 import GroupCard from "./GroupCard";
 const Notifications = () => {
+  const [allReadStatus, setAllReadStatus] = useState<boolean>(false);
+
+  const markAllRead = () => {
+    setAllReadStatus(true);
+  };
   return (
     <div className="notifications-panel">
       <div className="notification-feedback">
@@ -13,11 +18,11 @@ const Notifications = () => {
           </div>
         </div>
         <div className="read-all">
-          <p>Mark all as read</p>
+          <p onClick={markAllRead}>Mark all as read</p>
         </div>
       </div>
-      <GroupCard />
-      <GroupCard />
+      <GroupCard allReadStatus={allReadStatus} />
+      <GroupCard allReadStatus={allReadStatus} />
     </div>
   );
 };

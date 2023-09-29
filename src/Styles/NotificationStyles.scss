@@ -1,39 +1,10 @@
 @import "../Variables/Variables.scss";
 @import "../Breakpoints/Breakpoints.scss";
 
-// .font-test {
-//   border: 1px red solid;
-//   h2 {
-//     font-family: $fontMedium, sans-serif;
-//     font-weight: 400;
-//     font-size: 24px;
-//     color: gray;
-//   }
-// }
-// .variable-font-test h2 {
-//   font-family: $fontExtraBold, sans-serif;
-//   font-weight: 300;
-// }
-
-// .notifications-panel {
-//   // @include borderCheck();
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
-//   flex-direction: column-reverse;
-//   margin-top: 3em;
-//   height: 100%;
-//   width: 44em;
-//   border-radius: 10px;
-//   background-color: $white;
-//   box-shadow: rgba(226, 221, 221, 0.2) 0px 0px 16px 0px;
-// }
-
 // When introducing small and medium with min-width, you need to include values in both or the only introduced value will be the defacto for all sizes. Keep in mind.
 .notifications-panel {
   @include sm {
     width: 33em;
-    // margin: 0%;
     margin-left: 0.5em;
     margin-right: 0.5em;
     border-radius: 0%;
@@ -43,13 +14,9 @@
     flex-direction: column;
     align-items: center;
     background-color: $white;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     box-shadow: rgba(226, 221, 221, 0.2) 0px 0px 16px 0px;
-    // border-radius: 10px;
-    // p {
-    //   font-size: 18px;
-    // }
   }
 
   @include lg {
@@ -57,8 +24,8 @@
     margin-top: 3em;
     margin-left: 1em;
     margin-right: 1em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     height: 100%;
     width: 44em;
     border-radius: 10px;
@@ -73,29 +40,18 @@
   @include sm {
     display: flex;
     width: 100%;
-    // @include borderCheck(magenta);
     justify-content: space-between;
   }
   @include lg {
     display: flex;
     justify-content: space-between;
-    // @include borderCheck(orange);
+    padding-bottom: 0.5em;
     width: 100%;
   }
-
-  // span {
-  //   height: 250px;
-  //   width: 250px;
-  //   background-color: blue;
-  //   color: $white;
-  // }
 }
 
 .notifications {
-  // @include borderCheck(blue);
   @include sm {
-    // padding-left: 1em;
-    // padding-right: 1em;
     font-family: $fontMedium, sans-serif;
     color: $darktext;
   }
@@ -140,7 +96,6 @@
   }
   @include lg {
     display: flex;
-    // @include borderCheck(orange);
     margin-top: 1em;
     margin-bottom: 1.4em;
     margin-left: 0.6em;
@@ -155,7 +110,6 @@
 }
 
 .read-all {
-  // @include borderCheck(red);
   @include sm {
     margin-top: 0.3em;
     font-family: $fontMedium, sans-serif;

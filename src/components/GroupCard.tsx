@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/GroupCardStyles.css";
 import AnnaKim from "../assets/images/avatar-anna-kim.webp";
 import Image from "next/image";
 
-const GroupCard = () => {
+type GroupCardProps = {
+  allReadStatus: boolean;
+};
+
+const GroupCard = ({ allReadStatus }: GroupCardProps) => {
+  const [isRead, setIsRead] = useState(false);
+
+  const modularClass = isRead
+    ? "group-card-panel-read"
+    : "group-card-panel-unread";
+
+  const markAsRead = () => {
+    setIsRead(true);
+  };
+
+  // useEffect will set isRead to true for all messages and override the option to markAsRead().
+  useEffect(() => {
+    allReadStatus ? setIsRead(true) : null;
+  }, [allReadStatus]);
   return (
-    <div className="group-card-panel-unread">
+    <div className={modularClass} onClick={markAsRead}>
       <div className="user-details">
         <div className="avatar">
           <Image src={AnnaKim} alt="user-avatar" width={50} height={50} />
@@ -13,7 +31,8 @@ const GroupCard = () => {
       </div>
       <div className="user-info">
         <div>
-          <span className="username">Anna Kim</span> Left the group Chess Club
+          <span className="username">Nathan Peterson</span> reacted to your
+          recent post 5 end-gamge strategies to increase your win rate.
           <div className="time-stamp-placeholder">
             <span className="timestamp">2 Weeks Ago</span>
           </div>
