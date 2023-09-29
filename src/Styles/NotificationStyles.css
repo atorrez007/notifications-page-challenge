@@ -9,29 +9,124 @@
 @media (min-width: 300px) {
   .notifications-panel {
     width: 33em;
-    margin: 0%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     border-radius: 0%;
     display: flex;
-    padding: 0 1em 0 1em 0;
     justify-content: flex-end;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     background-color: rgb(255, 255, 255);
+    padding-left: 1em;
+    padding-right: 1em;
     box-shadow: rgba(226, 221, 221, 0.2) 0px 0px 16px 0px;
-  }
-  .notifications-panel p {
-    font-size: 18px;
   }
 }
 @media (min-width: 960px) {
   .notifications-panel {
     margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     height: 100%;
     width: 44em;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
   }
-  .notifications-panel p {
-    font-size: 16px;
+}
+
+@media (min-width: 300px) {
+  .notification-feedback {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 960px) {
+  .notification-feedback {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (min-width: 300px) {
+  .notifications {
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    color: rgb(25, 25, 33);
+  }
+}
+@media (min-width: 960px) {
+  .notifications {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    color: rgb(25, 25, 33);
+  }
+}
+
+@media (min-width: 300px) {
+  .text-and-count {
+    display: flex;
+    justify-content: center;
+    font-family: "PlusJakartaSans-ExtraBold", sans-serif;
+    align-items: center;
+  }
+}
+@media (min-width: 960px) {
+  .text-and-count {
+    display: flex;
+    justify-content: center;
+    font-family: "PlusJakartaSans-ExtraBold", sans-serif;
+    align-items: center;
+  }
+}
+
+@media (min-width: 300px) {
+  .inbox-counter {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1.4em;
+    margin-left: 0.6em;
+    background-color: rgb(9, 51, 121);
+    width: 1.8em;
+    height: 1.5em;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 960px) {
+  .inbox-counter {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1.4em;
+    margin-left: 0.6em;
+    background-color: rgb(9, 51, 121);
+    width: 1.8em;
+    height: 1.5em;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 300px) {
+  .read-all {
+    margin-top: 0.3em;
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    color: rgb(119, 124, 128);
+  }
+}
+@media (min-width: 960px) {
+  .read-all {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0.3em;
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    color: rgb(119, 124, 128);
   }
 }/*# sourceMappingURL=NotificationStyles.css.map */

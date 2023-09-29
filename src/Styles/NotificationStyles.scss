@@ -33,29 +33,139 @@
 .notifications-panel {
   @include sm {
     width: 33em;
-    margin: 0%;
+    // margin: 0%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     border-radius: 0%;
     display: flex;
-    padding: 0 1em 0 1em 0;
+    // padding: 0 1em 0 1em 0;
     justify-content: flex-end;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     background-color: $white;
+    padding-left: 1em;
+    padding-right: 1em;
     box-shadow: rgba(226, 221, 221, 0.2) 0px 0px 16px 0px;
-    p {
-      font-size: 18px;
-    }
+    // border-radius: 10px;
+    // p {
+    //   font-size: 18px;
+    // }
   }
 
   @include lg {
     // @include borderCheck();
     margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     height: 100%;
     width: 44em;
     border-radius: 10px;
     background-color: $white;
-    p {
-      font-size: 16px;
-    }
+    // p {
+    //   font-size: 16px;
+    // }
+  }
+}
+
+.notification-feedback {
+  @include sm {
+    display: flex;
+    width: 100%;
+    // @include borderCheck(magenta);
+    justify-content: space-between;
+  }
+  @include lg {
+    display: flex;
+    justify-content: space-between;
+    // @include borderCheck(orange);
+    width: 100%;
+  }
+
+  // span {
+  //   height: 250px;
+  //   width: 250px;
+  //   background-color: blue;
+  //   color: $white;
+  // }
+}
+
+.notifications {
+  // @include borderCheck(blue);
+  @include sm {
+    // padding-left: 1em;
+    // padding-right: 1em;
+    font-family: $fontMedium, sans-serif;
+    color: $darktext;
+  }
+
+  @include lg {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: $fontMedium, sans-serif;
+    color: $darktext;
+  }
+}
+
+.text-and-count {
+  @include sm {
+    display: flex;
+    justify-content: center;
+    font-family: $fontExtraBold, sans-serif;
+    align-items: center;
+  }
+  @include lg {
+    display: flex;
+    justify-content: center;
+    font-family: $fontExtraBold, sans-serif;
+    align-items: center;
+  }
+}
+
+.inbox-counter {
+  @include sm {
+    display: flex;
+    // @include borderCheck(orange);
+    margin-top: 1em;
+    margin-bottom: 1.4em;
+    margin-left: 0.6em;
+    background-color: $darkblue;
+    width: 1.8em;
+    height: 1.5em;
+    border-radius: 6px;
+    color: $white;
+    align-items: center;
+    justify-content: center;
+  }
+  @include lg {
+    display: flex;
+    // @include borderCheck(orange);
+    margin-top: 1em;
+    margin-bottom: 1.4em;
+    margin-left: 0.6em;
+    background-color: $darkblue;
+    width: 1.8em;
+    height: 1.5em;
+    border-radius: 6px;
+    color: $white;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.read-all {
+  // @include borderCheck(red);
+  @include sm {
+    margin-top: 0.3em;
+    font-family: $fontMedium, sans-serif;
+    color: $graytext;
+  }
+  @include lg {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0.3em;
+    font-family: $fontMedium, sans-serif;
+    color: $graytext;
   }
 }
