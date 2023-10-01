@@ -14,6 +14,7 @@
     padding-bottom: 0.5em;
     background-color: $unreadGray;
     align-items: center;
+    cursor: pointer;
   }
 
   @include lg {
@@ -29,6 +30,7 @@
     padding-bottom: 0.5em;
     background-color: $unreadGray;
     align-items: center;
+    cursor: pointer;
   }
 }
 
@@ -43,8 +45,11 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: $white;
+    // background-color: $white;
     align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: $white;
   }
 
   @include lg {
@@ -58,8 +63,11 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: $white;
+    // background-color: $white;
     align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: $white;
   }
 }
 

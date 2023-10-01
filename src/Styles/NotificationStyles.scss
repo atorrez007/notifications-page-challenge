@@ -114,6 +114,7 @@
     margin-top: 0.3em;
     font-family: $fontMedium, sans-serif;
     color: $graytext;
+    cursor: pointer;
   }
   @include lg {
     padding-left: 1em;
@@ -121,5 +122,6 @@
     margin-top: 0.3em;
     font-family: $fontMedium, sans-serif;
     color: $graytext;
+    cursor: pointer;
   }
 }

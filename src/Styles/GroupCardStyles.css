@@ -19,6 +19,7 @@
     padding-bottom: 0.5em;
     background-color: rgb(249, 250, 254);
     align-items: center;
+    cursor: pointer;
   }
 }
 @media (min-width: 960px) {
@@ -35,6 +36,7 @@
     padding-bottom: 0.5em;
     background-color: rgb(249, 250, 254);
     align-items: center;
+    cursor: pointer;
   }
 }
 
@@ -49,8 +51,10 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: rgb(255, 255, 255);
     align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: rgb(255, 255, 255);
   }
 }
 @media (min-width: 960px) {
@@ -65,8 +69,10 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: rgb(255, 255, 255);
     align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: rgb(255, 255, 255);
   }
 }
 

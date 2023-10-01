@@ -119,7 +119,8 @@
   .read-all {
     margin-top: 0.3em;
     font-family: "PlusJakartaSans-Medium", sans-serif;
-    color: rgb(119, 124, 128);
+    color: rgb(86, 88, 90);
+    cursor: pointer;
   }
 }
 @media (min-width: 960px) {
@@ -128,6 +129,7 @@
     padding-right: 1em;
     margin-top: 0.3em;
     font-family: "PlusJakartaSans-Medium", sans-serif;
-    color: rgb(119, 124, 128);
+    color: rgb(86, 88, 90);
+    cursor: pointer;
   }
 }/*# sourceMappingURL=NotificationStyles.css.map */
