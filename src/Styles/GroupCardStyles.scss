@@ -12,7 +12,7 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: $unreadGray;
+    background-color: $grayspace;
     align-items: center;
     cursor: pointer;
   }
@@ -28,7 +28,7 @@
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    background-color: $unreadGray;
+    background-color: $grayspace;
     align-items: center;
     cursor: pointer;
   }
@@ -81,7 +81,6 @@
 
 .user-info {
   display: flex;
-
   padding-top: 1em;
   flex-wrap: wrap;
   div {

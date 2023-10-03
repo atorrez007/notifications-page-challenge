@@ -8,11 +8,9 @@ type GroupCardProps = {
 };
 
 const GroupCard = ({ allReadStatus }: GroupCardProps) => {
-  const [isRead, setIsRead] = useState(false);
+  const [isRead, setIsRead] = useState<boolean>(false);
 
-  const modularClass = isRead
-    ? "group-card-panel-read"
-    : "group-card-panel-unread";
+  const readOrUnread = isRead ? "read" : "unread";
 
   const markAsRead = () => {
     setIsRead(true);
@@ -23,7 +21,7 @@ const GroupCard = ({ allReadStatus }: GroupCardProps) => {
     allReadStatus ? setIsRead(true) : null;
   }, [allReadStatus]);
   return (
-    <div className={modularClass} onClick={markAsRead}>
+    <div className={`group-card-panel-${readOrUnread}`} onClick={markAsRead}>
       <div className="user-details">
         <div className="avatar">
           <Image src={AnnaKim} alt="user-avatar" width={50} height={50} />
