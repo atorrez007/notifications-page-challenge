@@ -2,13 +2,32 @@ import React, { useEffect, useState } from "react";
 import "../Styles/GroupCardStyles.css";
 import AnnaKim from "../assets/images/avatar-anna-kim.webp";
 import Image from "next/image";
+import { Alert } from "@/Types/types";
+import { time } from "console";
+
+// export type Alert = {
+//   allReadStatus: boolean;
+//   username: string;
+//   img: string;
+//   description: string;
+//   timestamp: string;
+//   message?: string;
+//   group?: string;
+// };
 
 type GroupCardProps = {
-  allReadStatus: boolean;
-  privateMessage?: string;
+  // allReadStatus: boolean;
+  // privateMessage?: string;
 };
 
-const GroupCard = ({ allReadStatus, privateMessage }: GroupCardProps) => {
+const GroupCard = ({
+  allReadStatus,
+  username,
+  description,
+  message,
+  group,
+  timestamp,
+}: Alert) => {
   const [isRead, setIsRead] = useState<boolean>(false);
 
   const readOrUnread = isRead ? "read" : "unread";
@@ -30,15 +49,16 @@ const GroupCard = ({ allReadStatus, privateMessage }: GroupCardProps) => {
       </div>
       <div className="user-info">
         <div>
-          <span className="username">Nathan Peterson</span>reacted to your
-          recent post 5 end-game strategies to increase your win rate.
-          {!isRead ? <span className="red-dot"></span> : null}
+          <span className="username">{username}</span>
+          {description}
+          <span className="group-styles"> {group}</span>
+          {!isRead ? <span className="red-dot" /> : null}
           <div className="time-stamp-placeholder">
-            <span className="timestamp">2 Weeks Ago</span>
+            <span className="timestamp">{timestamp}</span>
           </div>
           {/* JSX conditional if message exists. This is to prevent having an empty box in other components */}
-          {privateMessage ? (
-            <div className="private-message-container">{privateMessage}</div>
+          {message ? (
+            <div className="private-message-container">{message}</div>
           ) : null}
         </div>
       </div>

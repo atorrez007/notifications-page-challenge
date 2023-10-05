@@ -3,18 +3,21 @@ import React, { useState } from "react";
 import "../Styles/NotificationStyles.css";
 import GroupCard from "./GroupCard";
 import { Alert } from "../Types/types";
+
 const Notifications = () => {
   const [allReadStatus, setAllReadStatus] = useState<boolean>(false);
   const privateMessage =
     "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.";
   const alerts: Alert[] = [
     {
+      allReadStatus: allReadStatus,
       username: "Jacob Thompson",
       img: "img",
       description: "has joined your group",
       timestamp: "1 day ago",
     },
     {
+      allReadStatus: allReadStatus,
       username: "Rizky Hasanuddin",
       img: "img",
       description: "sent you a private message",
@@ -22,6 +25,7 @@ const Notifications = () => {
       message: privateMessage,
     },
     {
+      allReadStatus: allReadStatus,
       username: "Kimberly Smith",
       img: "img",
       description: "commented on your picture",
@@ -29,6 +33,7 @@ const Notifications = () => {
       // add picture type for conditional picture render
     },
     {
+      allReadStatus: allReadStatus,
       username: "Nathan Peterson",
       img: "img",
       description:
@@ -36,6 +41,7 @@ const Notifications = () => {
       timestamp: "2 weeks ago",
     },
     {
+      allReadStatus: false,
       username: "Anna Kim",
       img: "img",
       description: "left the group",
@@ -45,9 +51,11 @@ const Notifications = () => {
   ];
 
   const userJacob: Alert = {
+    allReadStatus: allReadStatus,
     username: "Jacob Thompson",
     img: "img",
     description: "has joined your group",
+    group: "Chess Club",
     timestamp: "2 weeks ago",
   };
 
@@ -68,12 +76,13 @@ const Notifications = () => {
         </div>
       </div>
       <div className="card-container">
-        <GroupCard allReadStatus={allReadStatus} />
-        <GroupCard
+        <GroupCard {...userJacob} />
+        {/* <GroupCard
           allReadStatus={allReadStatus}
           privateMessage={privateMessage}
         />
-        <GroupCard allReadStatus={allReadStatus} />
+        <GroupCard allReadStatus={allReadStatus} /> */}
+        {/* <GroupCard {...userJacob} /> */}
       </div>
     </div>
   );

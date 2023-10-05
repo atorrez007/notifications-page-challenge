@@ -1,4 +1,5 @@
 export type Alert = {
+  allReadStatus: boolean;
   username: string;
   img: string;
   description: string;
