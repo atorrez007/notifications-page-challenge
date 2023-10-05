@@ -21,8 +21,10 @@ const Notifications = () => {
           <p onClick={markAllRead}>Mark all as read</p>
         </div>
       </div>
-      <GroupCard allReadStatus={allReadStatus} />
-      <GroupCard allReadStatus={allReadStatus} />
+      <div className="card-container">
+        <GroupCard allReadStatus={allReadStatus} />
+        <GroupCard allReadStatus={allReadStatus} />
+      </div>
     </div>
   );
 };
