@@ -29,11 +29,10 @@ const GroupCard = ({ allReadStatus }: GroupCardProps) => {
       </div>
       <div className="user-info">
         <div>
-          <span className="username">Nathan Peterson</span> reacted to your
-          recent post 5 end-gamge strategies to increase your win rate.
+          <span className="username">Nathan Peterson</span>reacted to your
+          recent post 5 end-game strategies to increase your win rate.
           <div className="time-stamp-placeholder">
             <span className="timestamp">2 Weeks Ago</span>
-            <span className="testBranch">testBranch Deploy</span>
           </div>
         </div>
       </div>
