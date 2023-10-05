@@ -135,10 +135,10 @@
     flex-direction: column;
     min-width: 100%;
     align-items: center;
-    :hover {
-      transition: 0.05s;
-      background-color: $hoverGray;
-    }
+    // :hover {
+    //   transition: 0.05s;
+    //   background-color: $hoverGray;
+    // }
   }
 
   @include lg {
@@ -146,9 +146,9 @@
     min-width: 100%;
     flex-direction: column;
     align-items: center;
-    :hover {
-      transition: 0.05s;
-      background-color: $hoverGray;
-    }
+    // :hover {
+    //   transition: 0.05s;
+    //   background-color: $hoverGray;
+    // }
   }
 }
