@@ -150,25 +150,3 @@
     }
   }
 }
-
-.private-message-container {
-  @include sm {
-    min-height: 3em;
-    width: auto;
-    border: 1px $graytext solid;
-    font-family: $fontMedium, sans-serif;
-    color: $graytext;
-    padding: 1em;
-    border-radius: 3px;
-  }
-
-  @include lg {
-    min-height: 3em;
-    width: auto;
-    border: 1px $graytext solid;
-    font-family: $fontMedium, sans-serif;
-    color: $graytext;
-    padding: 1em;
-    border-radius: 3px;
-  }
-}

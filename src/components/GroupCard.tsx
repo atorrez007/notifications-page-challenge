@@ -32,6 +32,7 @@ const GroupCard = ({ allReadStatus, privateMessage }: GroupCardProps) => {
         <div>
           <span className="username">Nathan Peterson</span>reacted to your
           recent post 5 end-game strategies to increase your win rate.
+          {!isRead ? <span className="red-dot"></span> : null}
           <div className="time-stamp-placeholder">
             <span className="timestamp">2 Weeks Ago</span>
           </div>
