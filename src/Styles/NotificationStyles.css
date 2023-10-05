@@ -155,4 +155,27 @@
     transition: 0.05s;
     background-color: #a9a9a9;
   }
+}
+
+@media (min-width: 300px) {
+  .private-message-container {
+    min-height: 3em;
+    width: auto;
+    border: 1px rgb(86, 88, 90) solid;
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    color: rgb(86, 88, 90);
+    padding: 1em;
+    border-radius: 3px;
+  }
+}
+@media (min-width: 960px) {
+  .private-message-container {
+    min-height: 3em;
+    width: auto;
+    border: 1px rgb(86, 88, 90) solid;
+    font-family: "PlusJakartaSans-Medium", sans-serif;
+    color: rgb(86, 88, 90);
+    padding: 1em;
+    border-radius: 3px;
+  }
 }/*# sourceMappingURL=NotificationStyles.css.map */

@@ -5,9 +5,10 @@ import Image from "next/image";
 
 type GroupCardProps = {
   allReadStatus: boolean;
+  privateMessage?: string;
 };
 
-const GroupCard = ({ allReadStatus }: GroupCardProps) => {
+const GroupCard = ({ allReadStatus, privateMessage }: GroupCardProps) => {
   const [isRead, setIsRead] = useState<boolean>(false);
 
   const readOrUnread = isRead ? "read" : "unread";
@@ -34,6 +35,10 @@ const GroupCard = ({ allReadStatus }: GroupCardProps) => {
           <div className="time-stamp-placeholder">
             <span className="timestamp">2 Weeks Ago</span>
           </div>
+          {/* JSX conditional if message exists. This is to prevent having an empty box in other components */}
+          {privateMessage ? (
+            <div className="private-message-container">{privateMessage}</div>
+          ) : null}
         </div>
       </div>
     </div>
