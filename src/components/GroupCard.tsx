@@ -33,6 +33,7 @@ const GroupCard = ({ allReadStatus }: GroupCardProps) => {
           recent post 5 end-gamge strategies to increase your win rate.
           <div className="time-stamp-placeholder">
             <span className="timestamp">2 Weeks Ago</span>
+            <span className="testBranch">testBranch Deploy</span>
           </div>
         </div>
       </div>
