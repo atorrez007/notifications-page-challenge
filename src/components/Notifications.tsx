@@ -3,6 +3,13 @@ import React, { useState } from "react";
 import "../Styles/NotificationStyles.css";
 import GroupCard from "./GroupCard";
 import { Alert } from "../Types/types";
+import Jacob from "../assets/images/avatar-jacob-thompson.webp";
+import Anna from "../assets/images/avatar-anna-kim.webp";
+import Rizky from "../assets/images/avatar-rizky-hasanuddin.webp";
+import Kimberly from "../assets/images/avatar-kimberly-smith.webp";
+import Nathan from "../assets/images/avatar-nathan-peterson.webp";
+import Angela from "../assets/images/avatar-angela-gray.webp";
+import Mark from "../assets/images/avatar-mark-webber.webp";
 
 const Notifications = () => {
   const [allReadStatus, setAllReadStatus] = useState<boolean>(false);
@@ -10,54 +17,77 @@ const Notifications = () => {
     "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.";
   const alerts: Alert[] = [
     {
+      id: 5,
       allReadStatus: allReadStatus,
       username: "Jacob Thompson",
-      img: "img",
+      img: Jacob,
       description: "has joined your group",
       timestamp: "1 day ago",
+      group: "Chess Club",
     },
     {
+      id: 4,
       allReadStatus: allReadStatus,
       username: "Rizky Hasanuddin",
-      img: "img",
+      img: Rizky,
       description: "sent you a private message",
       timestamp: "5 days ago",
       message: privateMessage,
     },
     {
+      id: 3,
       allReadStatus: allReadStatus,
       username: "Kimberly Smith",
-      img: "img",
+      img: Kimberly,
       description: "commented on your picture",
       timestamp: "1 week ago",
       // add picture type for conditional picture render
     },
     {
+      id: 2,
       allReadStatus: allReadStatus,
       username: "Nathan Peterson",
-      img: "img",
+      img: Nathan,
       description:
         "reacted to your recent post 5 end-game strategies to increase your win rate",
       timestamp: "2 weeks ago",
     },
     {
-      allReadStatus: false,
+      id: 1,
+      allReadStatus: allReadStatus,
       username: "Anna Kim",
-      img: "img",
+      img: Anna,
       description: "left the group",
       group: "Chess Club",
       timestamp: "2 weeks ago",
     },
+    {
+      id: 6,
+      allReadStatus: allReadStatus,
+      username: "Angela Gray",
+      img: Angela,
+      description: "followed you",
+      timestamp: "5 minutes ago",
+    },
+    {
+      id: 7,
+      allReadStatus: allReadStatus,
+      username: "Mark Webber",
+      img: Mark,
+      description: "reacted to your recent post",
+      timestamp: "1m ago",
+      post: "My first tournament today!",
+    },
   ];
 
-  const userJacob: Alert = {
-    allReadStatus: allReadStatus,
-    username: "Jacob Thompson",
-    img: "img",
-    description: "has joined your group",
-    group: "Chess Club",
-    timestamp: "2 weeks ago",
-  };
+  // const userJacob: Alert = {
+  //   allReadStatus: allReadStatus,
+  //   username: "Jacob Thompson",
+  //   img: Jacob,
+  //   description: "has joined your group",
+  //   group: "Chess Club",
+  //   timestamp: "2 weeks ago",
+  // };
 
   const markAllRead = () => {
     setAllReadStatus(true);
@@ -76,13 +106,11 @@ const Notifications = () => {
         </div>
       </div>
       <div className="card-container">
-        <GroupCard {...userJacob} />
-        {/* <GroupCard
-          allReadStatus={allReadStatus}
-          privateMessage={privateMessage}
-        />
-        <GroupCard allReadStatus={allReadStatus} /> */}
-        {/* <GroupCard {...userJacob} /> */}
+        {alerts
+          .sort((a, b) => b.id - a.id)
+          .map((obj) => (
+            <GroupCard key={obj.id} {...obj} />
+          ))}
       </div>
     </div>
   );

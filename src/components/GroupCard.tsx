@@ -3,7 +3,6 @@ import "../Styles/GroupCardStyles.css";
 import AnnaKim from "../assets/images/avatar-anna-kim.webp";
 import Image from "next/image";
 import { Alert } from "@/Types/types";
-import { time } from "console";
 
 // export type Alert = {
 //   allReadStatus: boolean;
@@ -23,10 +22,12 @@ type GroupCardProps = {
 const GroupCard = ({
   allReadStatus,
   username,
+  img,
   description,
   message,
   group,
   timestamp,
+  post,
 }: Alert) => {
   const [isRead, setIsRead] = useState<boolean>(false);
 
@@ -44,19 +45,19 @@ const GroupCard = ({
     <div className={`group-card-panel-${readOrUnread}`} onClick={markAsRead}>
       <div className="user-details">
         <div className="avatar">
-          <Image src={AnnaKim} alt="user-avatar" width={50} height={50} />
+          <Image src={img} alt="user-avatar" width={50} height={50} />
         </div>
       </div>
       <div className="user-info">
         <div>
           <span className="username">{username}</span>
           {description}
+          {post ? <span className="post-styles"> {post}</span> : null}
           <span className="group-styles"> {group}</span>
           {!isRead ? <span className="red-dot" /> : null}
           <div className="time-stamp-placeholder">
             <span className="timestamp">{timestamp}</span>
           </div>
-          {/* JSX conditional if message exists. This is to prevent having an empty box in other components */}
           {message ? (
             <div className="private-message-container">{message}</div>
           ) : null}

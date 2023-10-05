@@ -130,6 +130,7 @@
     color: $graytext;
     padding: 1em;
     border-radius: 3px;
+    margin-bottom: 1.5em;
   }
 
   @include lg {
@@ -140,6 +141,7 @@
     color: $graytext;
     padding: 1em;
     border-radius: 3px;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -147,6 +149,12 @@
   font-family: $fontMedium, sans-serif;
   font-weight: 800;
   color: navy;
+}
+
+.post-styles {
+  font-family: $fontMedium, sans-serif;
+  font-weight: 600;
+  color: $graytext;
 }
 
 .red-dot {
