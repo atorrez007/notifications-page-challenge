@@ -77,6 +77,8 @@
 }
 
 .avatar {
+  display: flex;
+  align-items: center;
   height: 60px;
   width: 60px;
   padding-left: 0.5em;
@@ -102,13 +104,17 @@
   margin-right: 0.4em;
 }
 
+.description-styles {
+  font-family: "PlusJakartaSans-Medium", sans-serif;
+}
+
 .time-stamp-placeholder {
   padding-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
 .timestamp {
-  margin-top: 0%;
+  color: #96a4b2;
 }
 
 .group-card-name {
@@ -130,7 +136,7 @@
   .private-message-container {
     min-height: 3em;
     width: auto;
-    border: 1px rgb(86, 88, 90) solid;
+    border: 1px #96a4b2 solid;
     font-family: "PlusJakartaSans-Medium", sans-serif;
     color: rgb(86, 88, 90);
     padding: 1em;
@@ -142,7 +148,7 @@
   .private-message-container {
     min-height: 3em;
     width: auto;
-    border: 1px rgb(86, 88, 90) solid;
+    border: 1px #b9c4cf solid;
     font-family: "PlusJakartaSans-Medium", sans-serif;
     color: rgb(86, 88, 90);
     padding: 1em;

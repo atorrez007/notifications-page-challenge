@@ -72,6 +72,8 @@
 }
 
 .avatar {
+  display: flex;
+  align-items: center;
   height: 60px;
   width: 60px;
   padding-left: 0.5em;
@@ -97,13 +99,17 @@
   margin-right: 0.4em;
 }
 
+.description-styles {
+  font-family: $fontMedium, sans-serif;
+}
+
 .time-stamp-placeholder {
   padding-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
 .timestamp {
-  margin-top: 0%;
+  color: #96a4b2;
 }
 
 .group-card-name {
@@ -125,7 +131,7 @@
   @include sm {
     min-height: 3em;
     width: auto;
-    border: 1px $graytext solid;
+    border: 1px #96a4b2 solid;
     font-family: $fontMedium, sans-serif;
     color: $graytext;
     padding: 1em;
@@ -136,7 +142,7 @@
   @include lg {
     min-height: 3em;
     width: auto;
-    border: 1px $graytext solid;
+    border: 1px #b9c4cf solid;
     font-family: $fontMedium, sans-serif;
     color: $graytext;
     padding: 1em;

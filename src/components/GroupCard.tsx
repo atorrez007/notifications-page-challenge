@@ -51,7 +51,8 @@ const GroupCard = ({
       <div className="user-info">
         <div>
           <span className="username">{username}</span>
-          {description}
+          <span className="description-styles">{description}</span>
+
           {post ? <span className="post-styles"> {post}</span> : null}
           <span className="group-styles"> {group}</span>
           {!isRead ? <span className="red-dot" /> : null}

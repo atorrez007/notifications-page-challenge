@@ -67,7 +67,7 @@ const Notifications = () => {
       username: "Angela Gray",
       img: Angela,
       description: "followed you",
-      timestamp: "5 minutes ago",
+      timestamp: "5m ago",
     },
     {
       id: 7,
@@ -79,15 +79,6 @@ const Notifications = () => {
       post: "My first tournament today!",
     },
   ];
-
-  // const userJacob: Alert = {
-  //   allReadStatus: allReadStatus,
-  //   username: "Jacob Thompson",
-  //   img: Jacob,
-  //   description: "has joined your group",
-  //   group: "Chess Club",
-  //   timestamp: "2 weeks ago",
-  // };
 
   const markAllRead = () => {
     setAllReadStatus(true);
