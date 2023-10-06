@@ -92,7 +92,7 @@ const Notifications = () => {
         <div className="notifications">
           <div className="text-and-count">
             <h3>Notifications</h3>
-            <span className="inbox-counter">3</span>
+            <span className="inbox-counter">{alerts.length}</span>
           </div>
         </div>
         <div className="read-all">
