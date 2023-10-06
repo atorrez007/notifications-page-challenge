@@ -51,9 +51,9 @@ const Notifications = () => {
       allReadStatus: allReadStatus,
       username: "Nathan Peterson",
       img: Nathan,
-      description:
-        "reacted to your recent post 5 end-game strategies to increase your win rate",
+      description: "reacted to your recent post",
       timestamp: "2 weeks ago",
+      post: "5 end-game strategies to increase your win rate",
     },
     {
       id: 1,
