@@ -3,13 +3,16 @@ import React, { useState } from "react";
 import "../Styles/NotificationStyles.css";
 import GroupCard from "./GroupCard";
 import { Alert } from "../Types/types";
-import Jacob from "../assets/images/avatar-jacob-thompson.webp";
-import Anna from "../assets/images/avatar-anna-kim.webp";
-import Rizky from "../assets/images/avatar-rizky-hasanuddin.webp";
-import Kimberly from "../assets/images/avatar-kimberly-smith.webp";
-import Nathan from "../assets/images/avatar-nathan-peterson.webp";
-import Angela from "../assets/images/avatar-angela-gray.webp";
-import Mark from "../assets/images/avatar-mark-webber.webp";
+import {
+  Jacob,
+  Anna,
+  Rizky,
+  Kimberly,
+  Nathan,
+  Angela,
+  Mark,
+  Chess,
+} from "../imageImports";
 
 const Notifications = () => {
   const [allReadStatus, setAllReadStatus] = useState<boolean>(false);
@@ -41,7 +44,7 @@ const Notifications = () => {
       img: Kimberly,
       description: "commented on your picture",
       timestamp: "1 week ago",
-      // add picture type for conditional picture render
+      picture: Chess,
     },
     {
       id: 2,

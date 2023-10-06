@@ -10,4 +10,5 @@ export type Alert = {
   message?: string;
   group?: string;
   post?: string;
+  picture?: StaticImageData;
 };

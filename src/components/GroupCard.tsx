@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../Styles/GroupCardStyles.css";
-import AnnaKim from "../assets/images/avatar-anna-kim.webp";
 import Image from "next/image";
 import { Alert } from "@/Types/types";
 
@@ -14,11 +13,6 @@ import { Alert } from "@/Types/types";
 //   group?: string;
 // };
 
-type GroupCardProps = {
-  // allReadStatus: boolean;
-  // privateMessage?: string;
-};
-
 const GroupCard = ({
   allReadStatus,
   username,
@@ -28,6 +22,7 @@ const GroupCard = ({
   group,
   timestamp,
   post,
+  picture,
 }: Alert) => {
   const [isRead, setIsRead] = useState<boolean>(false);
 
@@ -48,13 +43,13 @@ const GroupCard = ({
           <Image src={img} alt="user-avatar" width={50} height={50} />
         </div>
       </div>
+
       <div className="user-info">
         <div>
           <span className="username">{username}</span>
-          <span className="description-styles">{description}</span>
-
+          <span className="description-styles">{description} </span>
           {post ? <span className="post-styles"> {post}</span> : null}
-          <span className="group-styles"> {group}</span>
+          {group ? <span className="group-styles">{group}</span> : null}
           {!isRead ? <span className="red-dot" /> : null}
           <div className="time-stamp-placeholder">
             <span className="timestamp">{timestamp}</span>
@@ -64,6 +59,15 @@ const GroupCard = ({
           ) : null}
         </div>
       </div>
+      {picture ? (
+        <Image
+          src={picture}
+          className="picture-styles"
+          alt="referencePicture"
+          width={50}
+          height={50}
+        ></Image>
+      ) : null}
     </div>
   );
 };
